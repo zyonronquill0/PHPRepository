@@ -1,0 +1,196 @@
+:root {
+    --feu-green: #006633;
+    --feu-gold: #f3c633;
+    --bg-cream: #f5f5dc;
+    --card-white: #ffffff;
+    --text-dark: #201f1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px 0; /* Increased padding slightly for longer scroll */
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--feu-green);
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.section {
+    background: var(--card-white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.section h2 {
+    color: var(--feu-green);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--feu-gold);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="email"], 
+input[type="date"], 
+select {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-family: inherit;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="date"]:focus, 
+select:focus {
+    border-color: var(--feu-green);
+    box-shadow: 0 0 0 4px rgba(0, 102, 51, 0.08);
+}
+
+
+.btn {
+    text-decoration: none;
+    background-color: var(--feu-green);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 400px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto 25px auto; 
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--feu-gold);
+    color: var(--feu-green);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(-2px);
+}
+
+/* Output Box (Mapped from your .result class) */
+.output, .result {
+    margin-top: 25px;
+    background: #f9f9f9;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    color: var(--text-dark);
+    text-align: left;
+    border-left: 5px solid var(--feu-gold);
+}
+
+.output h2 {
+    color: var(--feu-green);
+    margin-bottom: 15px;
+}
+
+.output p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Maintained your table styles for the index page */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: var(--card-white);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    table-layout: fixed;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+td:nth-child(1), td:nth-child(3) { width: 30%; }
+td:nth-child(2), td:nth-child(5) { width: 5%; }
+td:nth-child(4), td:nth-child(6) { width: 15%; }
+
+.title {
+    background-color: var(--feu-gold);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100% !important;
+}
+
+tr {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+tr:not(:first-child):hover {
+    background-color: #fffff0;
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+table:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
