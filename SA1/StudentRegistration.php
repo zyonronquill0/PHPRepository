@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styleSR.css">
 </head>
 <body>
+
+
     <div class="container">
         <?php
         $fName = "Lord Zyon";

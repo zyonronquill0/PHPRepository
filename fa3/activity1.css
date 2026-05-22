@@ -1,0 +1,153 @@
+:root {
+    --feu-green: #006633;
+    --feu-gold: #f3c633;
+    --bg-cream: #f5f5dc;
+    --card-white: #ffffff;
+    --text-dark: #201f1b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Floating White Container Card Box styling */
+.main-card {
+    background: var(--card-white);
+    width: 100%;
+    max-width: 950px;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.btn-wrapper {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--feu-green);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    color: var(--feu-gold);
+    transform: translateX(-3px);
+}
+
+.title-wrapper {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.title-wrapper h1 {
+    color: var(--feu-green);
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #fafffa;
+    color: var(--feu-green);
+    border: 1px solid var(--feu-gold);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Data Table Grid Structure Layout overrides */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+th {
+    background-color: var(--feu-green);
+    color: white;
+    padding: 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+td {
+    border: 1px solid #eef2f3;
+    padding: 14px;
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.senator-name {
+    text-align: left;
+    font-weight: 600;
+    padding-left: 20px;
+    color: var(--feu-green);
+}
+
+.contact-field {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+/* Row Hover Effects */
+tr:nth-child(even) {
+    background-color: #fafdfa;
+}
+
+tr:hover {
+    background-color: #fffff2;
+    transition: background-color 0.2s ease;
+}
+
+/* Circular Profile Avatar Image Frame */
+.person-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--feu-gold);
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #888883;
+    text-align: center;
+    border-top: 1px solid #f0f0e8;
+    padding-top: 20px;
+}

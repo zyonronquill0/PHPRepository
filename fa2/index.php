@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEU | Formative Assessment</title>
+    <title>FEU | Formative Assessment 2</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Technical Formative Assessment</h1>
+        <h1>Technical Formative Assessment 2</h1>
         
         <div class="menu-card">
             <div class="menu">
