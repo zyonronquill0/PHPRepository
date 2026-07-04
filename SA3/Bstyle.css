@@ -1,0 +1,70 @@
+:root {
+    --feu-green: #006633;
+    --feu-gold: #f3c633;
+    --bg-cream: #eef5dc;
+    --text-dark: #201f1b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+}
+
+.feu-text-green {
+    color: var(--feu-green);
+}
+
+.feu-badge {
+    background-color: var(--feu-green);
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.back-btn {
+    color: var(--feu-green) !important;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    color: var(--feu-gold) !important;
+    transform: translateX(-3px);
+}
+
+.custom-input {
+    border: 2px solid #eef2f3;
+    font-size: 0.95rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: var(--feu-gold);
+    box-shadow: 0 0 0 3px rgba(243, 198, 51, 0.2);
+}
+
+.feu-btn {
+    background-color: var(--feu-green);
+    color: #ffffff;
+    border: none;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+.feu-btn:hover {
+    background-color: var(--feu-gold);
+    color: var(--feu-green);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+.result-wrapper {
+    background-color: #fafdfa;
+    border-color: var(--feu-gold) !important;
+}
